@@ -1,0 +1,79 @@
+body {
+    background: #333;
+}
+
+.tab {
+    margin: 100px 0;
+}
+
+.actions {
+    margin-bottom: 20px;
+}
+
+.actions ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.actions ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.actions ul li.active {
+    background: white;
+    color: black;
+}
+
+.actions ul li.active:hover {
+    color: white;
+}
+
+.actions ul li:hover {
+    background-color: darkblue;
+}
+
+.content {
+    color: #444;
+    font-size: 18px;
+}
+
+.box {
+    padding: 30px;
+    display: none;
+    background: white;
+    border: 1px solid #444;
+}
+
+.box.active {
+    display: block !important;
+}
+
+.box h2 {
+    font-size: 24px;
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+    color: #222;
+    margin: 10px 0;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {transform: scale(0);}
+    60%  {transform: scale(1.05);}
+    80%  {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+/* The element to apply the animation to */
+.box {
+    animation-name: example;
+    animation-duration: 1s;
+}
+
